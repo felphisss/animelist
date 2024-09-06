@@ -1,3 +1,4 @@
+// Lista dos Animes Gerais
 let animes = [
     {
         nome: "Atack on Titan",
@@ -59,4 +60,108 @@ let animes = [
         sinopse: "Shoyo Hinata, um garoto baixo, se apaixona pelo vôlei após assistir a um jogo de um jogador talentoso. Determinado a se tornar um jogador de vôlei de destaque, ele entra para o clube de vôlei da escola e, junto com seus companheiros de equipe, enfrenta desafios e obstáculos para alcançar seus objetivos.",
         linkMyAnimelist: "https://myanimelist.net/anime/20583/Haikyuu"
       }
+];
+
+// Lista dos Animes em lançamento (visualização na página inicial)
+let animesLancamento = [
+  {
+    imagem: "imgAnimes/OshiNoKo2.webp",
+    nome: "Oshi no Ko 2",
+    link: "https://myanimelist.net/anime/55791/Oshi_no_Ko_2nd_Season"
+  },
+  {
+    imagem: "imgAnimes/Alya.webp",
+    nome: "Alya Sometimes Hides Her Feelings in Russian",
+    link: "https://myanimelist.net/anime/54744/Tokidoki_Bosotto_Russia-go_de_Dereru_Tonari_no_Alya-san"
+  },
+  {
+    imagem: "imgAnimes/ToweOfGod2.webp",
+    nome: "Tower Of God 2",
+    link: "https://myanimelist.net/anime/52635/Kami_no_Tou__Ouji_no_Kikan"
+  },
+  {
+    imagem: "imgAnimes/Wistoria.webp",
+    nome: "Wistoria: Wand and Sword",
+    link: "https://myanimelist.net/anime/58059/Tsue_to_Tsurugi_no_Wistoria"
+  },
+  {
+    imagem: "imgAnimes/DaysWithMyStepsister.webp",
+    nome: "Days with My Stepsister",
+    link: "https://myanimelist.net/anime/52481/Gimai_Seikatsu"
+  },
+  {
+    imagem: "imgAnimes/MakeHeroine.webp",
+    nome: "Makeine: Too Many Losing Heroines!",
+    link: "https://myanimelist.net/anime/57524/Make_Heroine_ga_Oosugiru"
+  },
+  {
+    imagem: "imgAnimes/NoLonger.jpg",
+    nome: "No Longer Allowed in Another World",
+    link: "https://myanimelist.net/anime/52367/Isekai_Shikkaku"
+  },
+  {
+    imagem: "imgAnimes/Pseudo Harem.jpg",
+    nome: "Pseudo Harem",
+    link: "https://myanimelist.net/anime/54968/Giji_Harem"
+  },
+  {
+    imagem: "imgAnimes/I Parry Everything.jpg",
+    nome: "I Parry Everything",
+    link: "https://myanimelist.net/anime/57058/Ore_wa_Subete_wo_Parry_suru__Gyaku_Kanchigai_no_Sekai_Saikyou_wa_Boukensha_ni_Naritai"
+  },
+  {
+    imagem: "imgAnimes/The Ossan Newbie Adventurer.jpg",
+    nome: "The Ossan Newbie Adventurer, Trained to Death by the Most Powerful Party, Became Invincible",
+    link: "https://myanimelist.net/anime/54913/Shinmai_Ossan_Boukensha_Saikyou_Party_ni_Shinu_hodo_Kitaerarete_Muteki_ni_Naru"
+  },
+  {
+    imagem: "imgAnimes/The Magical Girl.jpg",
+    nome: "The Magical Girl and the Evil Lieutenant Used to Be Archenemies",
+    link: "https://myanimelist.net/anime/57217/Katsute_Mahou_Shoujo_to_Aku_wa_Tekitai_shiteita"
+  },
+  {
+    imagem: "imgAnimes/A Journey Through Another World.jpg",
+    nome: "A Journey Through Another World: Raising Kids While Adventuring",
+    link: "https://myanimelist.net/anime/57380/Isekai_Yururi_Kikou__Kosodateshinagara_Boukensha_Shimasu"
+  },
+  {
+    imagem: "imgAnimes/VTuber Legend.jpg",
+    nome: "VTuber Legend: How I Went Viral after Forgetting to Turn Off My Stream",
+    link: "https://myanimelist.net/anime/54284/VTuber_Nandaga_Haishin_Kiri_Wasuretara_Densetsu_ni_Natteta"
+  },
+  {
+    imagem: "imgAnimes/Dahlia in Bloom.jpg",
+    nome: "Dahlia in Bloom: Crafting a Fresh Start with Magical Tools",
+    link: "https://myanimelist.net/anime/56449/Madougushi_Dahliya_wa_Utsumukanai"
+  },
+  {
+    imagem: "imgAnimes/Love Is Indivisible by Twins.jpg",
+    nome: "Love Is Indivisible by Twins",
+    link: "https://myanimelist.net/anime/55996/Koi_wa_Futago_de_Warikirenai"
+  },
+  {
+    imagem: "imgAnimes/Delico's Nursery.jpg",
+    nome: "Delico's Nursery",
+    link: "https://myanimelist.net/anime/56179/Delicos_Nursery"
+  },
+  {
+    imagem: "imgAnimes/Quality Assurance in Another World.jpg",
+    nome: "Quality Assurance in Another World",
+    link: "https://myanimelist.net/anime/54835/Kono_Sekai_wa_Fukanzen_Sugiru"
+  },
+  {
+    imagem: "imgAnimes/Narenare -Cheer for You!-.jpg",
+    nome: "Narenare -Cheer for You!-",
+    link: "https://myanimelist.net/anime/57099/Na_Nare_Hana_Nare"
+  },
+  {
+    imagem: "imgAnimes/The Elusive Samurai.jpg",
+    nome: "The Elusive Samurai",
+    link: "https://myanimelist.net/anime/54724/Nige_Jouzu_no_Wakagimi"
+  },
+  {
+    imagem: "imgAnimes/My Deer Friend Nokotan.jpg",
+    nome: "My Deer Friend Nokotan",
+    link: "https://myanimelist.net/anime/58426/Shikanoko_Nokonoko_Koshitantan"
+  },
 ];
