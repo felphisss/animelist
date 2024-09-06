@@ -12,7 +12,7 @@ AnimeList é uma aplicação web simples e interativa, criada com muito carinho 
 1. **Interface Intuitiva:** Navegue facilmente entre as seções de **Lançamentos**, **Animes** e **Sugestões**.
 2. **Busca Personalizada:** Digite o nome do anime e encontre tudo sobre ele: sinopse, imagens e links para mais informações.
 3. **Sugestões Personalizadas:** Encontre novos animes para assistir através de nossas sugestões personalizadas.
-~~4. **Tooltips Interativos:** Passe o mouse sobre as imagens dos animes em destaque para ver mais detalhes.~~ (Esse aqui parou de funcionar e ainda não consegui resolver) 
+4. ~~**Tooltips Interativos:** Passe o mouse sobre as imagens dos animes em destaque para ver mais detalhes.~~ (Esse aqui parou de funcionar e ainda não consegui resolver) 
 
 ### ️ **Tecnologias Utilizadas**
 
