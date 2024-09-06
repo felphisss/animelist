@@ -5,26 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Anime</title>
+    <title>AnimeList</title>
 </head>
 
-<body>
+<body onload="lancamentoAnimes()">
     <header>
+        <nav>
+            <button id="lancamentos">Lançamentos</button>
+            <button id="animes">Animes</button>
+            <button id="sugestoes">Sugestão</button>
+        </nav>
         <div class="cabecalho">
             <h1>AnimeList</h1>
         </div>
     </header>
     <main>
+        <!-- BUSCA -->
         <section>
             <input type="text" placeholder="Procure aqui">
-            <button onclick="pesquisar()">Procurar</button>
+            <button id="buscar">Buscar</button>
         </section>
 
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        <!-- LANÇAMENTOS -->
+        <section class="section" id="lancamentos-section">
+            <div class="titulo-centro">
+                <subtitle class="subtitulo" id="subtitulo">
+                    Animes em Lançamento
+                </subtitle>
+            </div>
+            <div class="caixa-centro">
+                <div class="box-lancamento" id="box-lancamento">
+                </div>
+            </div>
+        </section>
+
+        <!-- TODOS os ANIMES -->
+        <section class="section" id="animes-section">
+            <div class="titulo-centro">
+                <subtitle class="subtitulo" id="subtitulo">
+                    Lista de Animes
+                </subtitle>
+            </div>
+            <div class="caixa-centro" id="todos-animes">
+            </div>
+        </section>
+
+        <!-- SUGESTÕES -->
+        <section class="section" id="sugestoes-section">
+            <subtitle class="subtitulo" id="subtitulo">
+            </subtitle>
+        </section>
+
+        <!-- BUSCAR -->
+        <section class="section" id="buscar-section">
+            <div class="titulo-centro">
+                <subtitle class="subtitulo" id="subtitulo">
+                    Resultados da Busca
+                </subtitle>
+            </div>
+            <div class="caixa-centro" id="resultados-busca">
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2024 - Buscador de animes. Todos os direitos reservados.</p>
+        <p>© 2024 - AnimeList. Todos os direitos reservados.</p>
+        <a href="https://github.com/felphisss" target="_blank">https://github.com/felphisss</a>
     </footer>
     <script src="dados.js"></script>
     <script src="app.js"></script>
