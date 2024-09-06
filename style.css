@@ -1,22 +1,38 @@
-/* Importando uma nova fonte para o site a partir de um link do Google Fonts */
+/* style.css */
+
+/* 
+** Importando a fonte Roboto do Google Fonts **
+- Define a família de fontes que será utilizada no projeto.
+- A opção `display=swap` garante que as fontes sejam carregadas o mais rápido possível.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Estiliza o corpo da página */
+/* 
+** Estilizando o corpo da página **
+- Define a fonte padrão como Roboto.
+- Aplica uma imagem de fundo e configura seu tamanho e posição.
+- Utiliza o Flexbox para centralizar o conteúdo.
+- Preenche toda a altura da viewport.
+*/
 body {
-    font-family: "Roboto", sans-serif; /* Define a fonte padrão */
-    background-image: url("tokyo_street_night_by_arsenixc_dbbpqj5.jpg"); /* Muda o background da página para a imagem fornecida */
-    background-size: cover; /* Modo de apresentação da imagem */
-    background-position: center; /* Posição da imagem do background da página */
+    font-family: "Roboto", sans-serif; /* Define a fonte padrão como Roboto */
+    background-image: url("backgroundImg.jpg"); /* Aplica uma imagem de fundo */
+    background-size: cover; /* Configura o tamanho da imagem de fundo */
+    background-position: center; /* Configura a posição da imagem de fundo */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    height: 100vh; /* Preenche toda a altura da viewport */
     margin: 0;
     padding: 0;
 }
 
-/* Estiliza a barra de navegação */
+/*
+** Estilizando a barra de navegação **
+- Posiciona a barra de navegação no topo da página.
+- Utiliza Flexbox para distribuir os itens uniformemente.
+*/
 nav {
     position: fixed;
     top: 0;
@@ -28,7 +44,10 @@ nav {
     padding: 10px;
 }
 
-/* Estiliza os itens da barra de navegação */
+/* 
+** Estilizando os botões da barra de navegação **
+- Define o estilo dos botões, incluindo cor, tamanho da fonte, espaçamento entre letras, etc.
+*/
 nav button {
     color: #FAD426;
     padding: 10px;
@@ -42,15 +61,21 @@ nav button {
     padding: 0.2rem 1.5rem; /* Ajuste o padding conforme necessário */
 }
 
-/* Estiliza os itens da barra de navegação quando são passados o mouse sobre */
+/* 
+** Estilizando os botões da barra de navegação quando o mouse passa por cima **
+- Altera o estilo do botão quando o mouse passa sobre ele.
+*/
 nav button:hover {
     background: rgba(95, 182, 217, 0.8);
 }
 
-/* Estiliza os títulos h1 */
+/* 
+** Estiliza os títulos h1 **
+- Define o título como um elemento em linha com um fundo colorido e texto centralizado.
+- É usado para criar títulos chamativos e destacados.
+*/
 h1 {
     display: inline-block;
-    /* margin-top: -2rem; */
     font-size: 2.5rem; /* Tamanho da fonte */
     color: #FAD426; /* Mude a cor da letra*/
     text-align: center; /* Alinha o texto ao centro */
@@ -61,7 +86,11 @@ h1 {
     
 }
 
-/* Estiliza a seção main */
+/* 
+** Estiliza a seção main **
+- Define o layout da seção principal usando Flexbox.
+- Centraliza o conteúdo horizontal e verticalmente.
+*/
 main {
     display: flex;
     flex-direction: column;
@@ -69,14 +98,24 @@ main {
     justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
-/* Estiliza as seções da página */
+/* 
+** Estiliza as seções da página **
+- Define o layout das seções usando Flexbox.
+- Centraliza os itens horizontalmente.
+- Adiciona um espaçamento abaixo de cada seção.
+*/
 section {
     display: flex; /* Usa Flexbox para layout */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 2rem; /* Espaçamento abaixo de cada seção */
 }
 
-/* Estiliza os inputs dentro das seções */
+/* 
+** Estiliza os inputs dentro das seções **
+- Define o estilo dos campos de entrada (inputs).
+- Remove a borda padrão e adiciona um arredondamento.
+- Centraliza o texto e define o tamanho da fonte.
+*/
 section input {
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
@@ -88,7 +127,13 @@ section input {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-/* Estiliza os botões dentro das seções */
+/* 
+** Estiliza os botões dentro das seções **
+- Define o estilo dos botões.
+- Remove a borda padrão e adiciona um arredondamento.
+- Define a cor de fundo e do texto.
+- Adiciona um cursor para indicar interação.
+*/
 section button {
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
@@ -98,14 +143,22 @@ section button {
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    margin-left: 0.5rem;
+    margin-left: 0.5rem; /* Ajuste para alinhar com input */
 }
 
+/* 
+** Centraliza o texto horizontalmente **
+- Aplica a qualquer elemento com essa classe.
+*/
 .titulo-centro {
     text-align: center;
 }
 
-/* Estiliza o subtítulo */
+/* 
+** Estiliza o subtítulo **
+- Define um estilo de subtítulo com fundo colorido e texto em negrito.
+- É usado para destacar títulos secundários.
+*/
 .subtitulo {
     font-weight: bold; /* Deixa as letras em Negrito */
     display: inline-block; 
@@ -118,7 +171,11 @@ section button {
     padding: 0.2rem 10rem; /* Ajuste o padding conforme necessário */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+/* 
+** Estiliza a caixa central da página **
+- Cria uma caixa com rolagem vertical para exibir os resultados.
+- Utiliza Flexbox para organizar os itens verticalmente.
+*/
 .caixa-centro {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
@@ -130,7 +187,30 @@ section button {
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
-/* Estiliza cada item de resultado */
+/* 
+** Estiliza a caixa de sugestões **
+- Semelhante à caixa de resultados, mas com um fundo e borda diferentes.
+- É usada para exibir sugestões ou informações adicionais.
+*/
+.caixa-sugestoes {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center;
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 35rem; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 0.5rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+    background-color: rgba(29, 66, 115, 0.8); /* Mude a cor da caixa */
+    border: 5px solid #1D4273;
+}
+
+/* 
+** Estiliza cada item de resultado **
+- Define o estilo de cada item dentro das caixas de resultados ou sugestões.
+- Adiciona uma sombra leve para destacar os itens.
+*/
 .item-resultado {
     background: #1D4273; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
@@ -139,30 +219,42 @@ section button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
+/* 
+** Estiliza os títulos dentro dos itens de resultado **
+*/
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
     color: #FAD426; /* Cor do texto */
 }
 
-/* Estiliza os links dentro dos itens de resultado */
+/* 
+** Estiliza os links dentro dos itens de resultado **
+*/
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: #FFFE87; /* Cor do texto dos links */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
+/* 
+** Estiliza os links quando o mouse passa sobre **
+*/
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
+/* 
+** Estiliza a descrição meta dentro dos itens de resultado **
+*/
 .descricao-meta {
     color: #FFFFFF; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
-/* Estiliza o rodapé da página */
+/* 
+** Estiliza o rodapé da página **
+- Cria um rodapé fixo na parte inferior da página com fundo e texto personalizados.
+- Centraliza o conteúdo horizontalmente e verticalmente.
+*/
 footer {
     display: flex;
     justify-content: center;
@@ -177,17 +269,27 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
 }
 
+/* 
+** Estiliza parágrafos e links dentro do rodapé **
+- Adiciona margens para criar espaço entre os elementos.
+*/
 footer p, footer a {
     margin: 10px 15px; /* Adiciona margem acima e abaixo e margem a direita e a esquerda, respectivamente */
 }
 
+/* 
+** Estiliza os links dentro do rodapé **
+- Define a cor do texto dos links.
+*/
 footer a {
     color: #45474B; /* Cor do texto dos links */
 }
 
 /* 
-Edição da caixa de animes em lançamento
-Disposição em linhas e colunas a partir da esquerda
+** Cria uma área para exibir lançamentos de animes **
+- Utiliza Flexbox para criar um layout flexível e responsivo.
+- Permite que os itens sejam organizados em linhas e colunas.
+- Disposição a partir da esquerda
 */
 .box-lancamento {
     display: flex;
@@ -195,13 +297,29 @@ Disposição em linhas e colunas a partir da esquerda
     justify-content: left; /* Organiza os itens da esquerda para a direita */
 }
 
-/* Ajuste do tamanho das imagens */
+/* 
+** Estiliza as imagens dos lançamentos **
+- Ajusta o tamanho das imagens para se adaptarem ao container.
+- Adiciona uma borda para destacar as imagens.
+*/
 .box-lancamento img {
     width: calc(100% - 20px); /* Calcula a largura com base no container e margens */
     margin: 2px;
     border: 2.5px solid #1D4273;
 }
 
+/* 
+** TOOLTIP ABAIXO NÃO ESTÁ FUNCIONANDO **
+ Já tentei várias soluções, mas nao consegui fazer esse feature voltar a funcionar
+ Não tenho certeza em que momento ele deixou de rodar, mas eu acho q foi quando inclui a parte da **ORGANIZAÇÃO DE PÁGINAS** no arquivo app.js
+ Caso você consiga fazer essa tooltip funcionar, compartilhe comigo a solução, por favor.
+ */
+
+/* 
+** Cria um tooltip (dica de ferramenta) **
+- Posiciona a tooltip sobre um elemento quando o mouse passa por cima.
+- Esconde a tooltip por padrão e exibe ao passar o mouse.
+*/
 .tooltip {
     color: #FAD426;
     position: absolute;
@@ -214,6 +332,41 @@ Disposição em linhas e colunas a partir da esquerda
     z-index: 9999; /* Certifique-se que o z-index seja maior que outros elementos */
 }
 
+/* 
+** Esconde as seções por padrão **
+- Utiliza-se para controlar a exibição de diferentes seções da página.
+*/
 .section {
     display: none; /* Esconde todas as seções por padrão */
+}
+
+/*
+** TEXTO REFERENTE AO CÓDIGO ABAIXO
+- SÓ CONSEGUI UTILIZAR FLOAT PARA DEIXAR AS IMAGENS E OS TEXTOS DO JEITO QUE EU QUERIA
+- CASO TENTE DE OUTRA MANEIRA E OBTENHA UM MELHOR RESULTADO, COMPARTILHE COMIGO, OBRIGADO
+*/
+
+/* 
+** Limpa os floats para evitar problemas de layout **
+- Garante que os elementos não sobreponham outros elementos.
+*/
+.item-resultado {
+    clear: both; /* Limpa os floats */
+}
+
+/* 
+** Estiliza as imagens dos animes **
+- Posiciona a imagem à esquerda do texto.
+*/
+.imagem-anime {
+    float: left;
+    margin-right: 10px; /* Ajustar a margem conforme necessário */
+}
+
+/* 
+** Evita que o texto "extravase" do container **
+- Útil para evitar problemas de layout quando o conteúdo é muito longo.
+*/
+.informacoes-anime {
+    overflow: hidden; /* Para evitar que o texto "flutue" */
 }
