@@ -42,10 +42,11 @@ Quer ajudar a melhorar o AnimeList? Sinta-se à vontade para contribuir!
 * **Design:** O design da página está no arquivo `style.css`. 
 * **Funcionalidades:** A lógica da pesquisa está no arquivo `app.js`.
 * **Imagens:** As imagens dos animes estão na pasta `imgAnimes`.
-* **ATENÇÃO:** Sinta-se a vontade para atualizar e editar esse arquivos.
 
-* Se tiver alguma dúvida, entre em contato.
+**ATENÇÃO:** Sinta-se a vontade para atualizar e editar esse arquivos.
 
-* **Agradecimentos:** Sou extremamente grato à equipe Alura por proporcionar um ambiente de aprendizado tão enriquecedor e divertido. A plataforma
+Se tiver alguma dúvida, entre em contato.
+
+**Agradecimentos:** Sou extremamente grato à equipe Alura por proporcionar um ambiente de aprendizado tão enriquecedor e divertido. A plataforma
 e os recursos do Google foram fundamentais para a realização deste projeto. Graças a esse curso, pude aprimorar minhas habilidades em desenvolvimento web
 e estou muito mais confiante para enfrentar novos desafios. Agradeço a todos os envolvidos por essa jornada incrível!
