@@ -1,19 +1,22 @@
+<!-- index.html -->
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>AnimeList</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linkar o arquivo style.css com o arquivo index.html -->
+    <title>AnimeList - Buscador de animes</title> <!-- Título do site -->
+    <link rel="icon" href="ICON.ico" type="image/x-icon"> <!-- Ícone do site -->
 </head>
 
-<body onload="lancamentoAnimes()">
+<body onload="lancamentoAnimes()"> <!-- Por padrão, a página inicial será a de LANÇAMENTOS -->
     <header>
-        <nav>
+        <nav> <!-- ÁREA DE NAVEGAÇÃO -->
             <button id="lancamentos">Lançamentos</button>
             <button id="animes">Animes</button>
-            <button id="sugestoes">Sugestão</button>
+            <button id="sugestoes">Sugestões</button>
         </nav>
         <div class="cabecalho">
             <h1>AnimeList</h1>
@@ -22,7 +25,7 @@
     <main>
         <!-- BUSCA -->
         <section>
-            <input type="text" placeholder="Procure aqui">
+            <input type="text" placeholder="Procure seu anime aqui" id="campo-pesquisa">
             <button id="buscar">Buscar</button>
         </section>
 
@@ -52,8 +55,14 @@
 
         <!-- SUGESTÕES -->
         <section class="section" id="sugestoes-section">
-            <subtitle class="subtitulo" id="subtitulo">
-            </subtitle>
+            <div class="titulo-centro">
+                <subtitle class="subtitulo" id="subtitulo">
+                    Sugestões
+                </subtitle>
+            </div>
+            <div class="caixa-sugestoes">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSduuTjohD7ffZVDgrhrx9KbEfDHi6HjOeigAki86cmq1ukJkw/viewform?embedded=true" width="640" height="757" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                
+            </div>
         </section>
 
         <!-- BUSCAR -->
@@ -67,12 +76,14 @@
             </div>
         </section>
     </main>
+
+    <!-- Rodapé -->
     <footer>
         <p>© 2024 - AnimeList. Todos os direitos reservados.</p>
         <a href="https://github.com/felphisss" target="_blank">https://github.com/felphisss</a>
     </footer>
-    <script src="dados.js"></script>
-    <script src="app.js"></script>
+    <script src="dados.js"></script> <!-- Linkar o arquivo dados.js com o arquivo index.html -->
+    <script src="app.js"></script> <!-- Linkar o arquivo app.js com o arquivo index.html -->
 </body>
 
 </html>
