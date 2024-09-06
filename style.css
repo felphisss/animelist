@@ -1,11 +1,12 @@
+/* Importando uma nova fonte para o site a partir de um link do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Estiliza o corpo da página */
 body {
     font-family: "Roboto", sans-serif; /* Define a fonte padrão */
-    background-image: url("tokyo_street_night_by_arsenixc_dbbpqj5.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("tokyo_street_night_by_arsenixc_dbbpqj5.jpg"); /* Muda o background da página para a imagem fornecida */
+    background-size: cover; /* Modo de apresentação da imagem */
+    background-position: center; /* Posição da imagem do background da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -15,10 +16,41 @@ body {
     padding: 0;
 }
 
+/* Estiliza a barra de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(29, 66, 115, 0.8);
+    display: flex;
+    justify-content: space-evenly; /* Alinha os itens igualmente */
+    padding: 10px;
+}
+
+/* Estiliza os itens da barra de navegação */
+nav button {
+    color: #FAD426;
+    padding: 10px;
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #FAD426; /* Mude a cor da letra*/
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    background: rgba(7, 43, 105, 0.8); /* Mude a cor da caixa */
+    border: 0;
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 0.2rem 1.5rem; /* Ajuste o padding conforme necessário */
+}
+
+/* Estiliza os itens da barra de navegação quando são passados o mouse sobre */
+nav button:hover {
+    background: rgba(95, 182, 217, 0.8);
+}
+
 /* Estiliza os títulos h1 */
 h1 {
     display: inline-block;
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
     font-size: 2.5rem; /* Tamanho da fonte */
     color: #FAD426; /* Mude a cor da letra*/
     text-align: center; /* Alinha o texto ao centro */
@@ -29,6 +61,7 @@ h1 {
     
 }
 
+/* Estiliza a seção main */
 main {
     display: flex;
     flex-direction: column;
@@ -68,14 +101,31 @@ section button {
     margin-left: 0.5rem;
 }
 
+.titulo-centro {
+    text-align: center;
+}
+
+/* Estiliza o subtítulo */
+.subtitulo {
+    font-weight: bold; /* Deixa as letras em Negrito */
+    display: inline-block; 
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #FAD426; /* Mude a cor da letra*/
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.1rem; /* Espaçamento entre letras */
+    background: rgba(29, 66, 115, 0.8); /* Mude a cor da caixa */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 0.2rem 10rem; /* Ajuste o padding conforme necessário */
+}
+
 /* Estiliza a caixa de resultados da pesquisa */
-.resultados-pesquisa {
+.caixa-centro {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 35rem; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    margin-top: 0.5rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
 }
@@ -114,6 +164,9 @@ section button {
 
 /* Estiliza o rodapé da página */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(29, 66, 115, 0.2);
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
@@ -122,4 +175,45 @@ footer {
     position: fixed; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+footer p, footer a {
+    margin: 10px 15px; /* Adiciona margem acima e abaixo e margem a direita e a esquerda, respectivamente */
+}
+
+footer a {
+    color: #45474B; /* Cor do texto dos links */
+}
+
+/* 
+Edição da caixa de animes em lançamento
+Disposição em linhas e colunas a partir da esquerda
+*/
+.box-lancamento {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
+    justify-content: left; /* Organiza os itens da esquerda para a direita */
+}
+
+/* Ajuste do tamanho das imagens */
+.box-lancamento img {
+    width: calc(100% - 20px); /* Calcula a largura com base no container e margens */
+    margin: 2px;
+    border: 2.5px solid #1D4273;
+}
+
+.tooltip {
+    color: #FAD426;
+    position: absolute;
+    background-color: #1D4273;
+    border: 1px solid #aaa;
+    padding: 8px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 9999; /* Certifique-se que o z-index seja maior que outros elementos */
+}
+
+.section {
+    display: none; /* Esconde todas as seções por padrão */
 }
